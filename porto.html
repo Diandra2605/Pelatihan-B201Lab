@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio website of Diandra Alea Eshan, Computer Engineering student.">
+  <title>Diandra Alea Eshan | Portfolio</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<!--
+  Warna yang dipakai :
+  - Latar halaman : #f6f7f3
+  - Teks utama    : #1f2d27
+  - Hijau utama   : #376b55
+  - Hijau muda    : #e3ece7
+  - Garis/border  : #d5dfd9
+-->
+
+<body class="bg-[#f6f7f3] text-[#1f2d27] font-serif min-h-screen leading-relaxed">
+
+  <!-- ================= NAVBAR ================= -->
+  <!-- navbar menempel di atas saat halaman di-scroll -->
+  <header class="sticky top-0 z-10 bg-white/95 border-b border-[#d5dfd9]">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex flex-wrap items-center justify-between gap-x-6 gap-y-2">
+      <a href="#home" class="text-xl font-bold text-[#376b55]">Diandra</a>
+
+      <nav class="flex gap-6 text-base font-semibold">
+        <a href="#about" class="hover:text-[#376b55] hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-[#376b55]">About</a>
+        <a href="#skills" class="hover:text-[#376b55] hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-[#376b55]">Skills</a>
+        <a href="#projects" class="hover:text-[#376b55] hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-[#376b55]">Projects</a>
+        <a href="#contact" class="hover:text-[#376b55] hover:underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-[#376b55]">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-6">
+
+    <!-- ================= HOME ================= -->
+    <!-- jarak antara foto dan tulisan -->
+    <section id="home" class="py-16 sm:py-24 flex flex-col sm:flex-row items-center gap-8 sm:gap-12">
+      <img src="assets/Foto Formal.jpeg" alt="Photo of Diandra Alea Eshan"
+        class="w-40 h-40 sm:w-52 sm:h-52 rounded-full object-cover shrink-0 bg-[#e3ece7] ring-4 ring-white shadow-md">
+
+      <div class="text-center sm:text-left">
+        <p class="text-sm font-bold tracking-widest text-[#376b55] uppercase">Computer Engineering Student</p>
+        <h1 class="text-4xl sm:text-5xl font-bold text-[#376b55] leading-tight mt-2 mb-3">Diandra Alea Eshan</h1>
+        <p class="text-lg text-[#3d4f46] max-w-xl">Interested in web development and database systems.</p>
+
+        <!-- Tombol -->
+        <div class="mt-6 flex flex-wrap justify-center sm:justify-start gap-3">
+          <a href="#projects"
+            class="px-5 py-2.5 rounded-md bg-[#376b55] text-white font-semibold hover:bg-[#2c5644] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#376b55]">View Projects</a>
+          <a href="#contact"
+            class="px-5 py-2.5 rounded-md border border-[#376b55] text-[#376b55] font-semibold hover:bg-[#e3ece7] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#376b55]">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <!-- supaya judul tidak tertutup navbar saat klik menu -->
+    <section id="about" class="scroll-mt-20 py-14 border-t border-[#d5dfd9]">
+      <p class="text-[#376b55] font-semibold">A little about me</p>
+      <h2 class="text-3xl font-bold mt-1 mb-5">About Me</h2>
+      <!-- lebar paragraf dibatasi agar enak dibaca -->
+      <div class="max-w-3xl space-y-4 text-lg text-[#33443b]">
+        <p>
+          I am a Computer Engineering student at Institut Teknologi Sepuluh Nopember (ITS).
+          I am learning how to build websites and manage data with database systems.
+        </p>
+        <p>
+          I am currently building this portfolio as part of a training program, using HTML and Tailwind CSS.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section id="skills" class="scroll-mt-20 py-14 border-t border-[#d5dfd9]">
+      <p class="text-[#376b55] font-semibold">What I work with</p>
+      <h2 class="text-3xl font-bold mt-1 mb-5">Skills</h2>
+
+      <!-- badge turun ke baris baru kalau tidak muat -->
+      <ul class="flex flex-wrap gap-3">
+        <li class="px-4 py-2 rounded-full bg-[#e3ece7] text-[#244a3a] font-semibold">HTML</li>
+        <li class="px-4 py-2 rounded-full bg-[#e3ece7] text-[#244a3a] font-semibold">Tailwind CSS</li>
+        <li class="px-4 py-2 rounded-full bg-[#e3ece7] text-[#244a3a] font-semibold">Python</li>
+        <li class="px-4 py-2 rounded-full bg-[#e3ece7] text-[#244a3a] font-semibold">C++</li>
+        <li class="px-4 py-2 rounded-full bg-[#e3ece7] text-[#244a3a] font-semibold">Git &amp; GitHub</li>
+      </ul>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects" class="scroll-mt-20 py-14 border-t border-[#d5dfd9]">
+      <p class="text-[#376b55] font-semibold">My projects</p>
+      <h2 class="text-3xl font-bold mt-1 mb-6">Projects</h2>
+
+      <!-- grid: 1 kolom di HP, 2 kolom di layar sedang (md) ke atas -->
+      <div class="grid gap-6 md:grid-cols-2">
+
+        <article class="bg-white border border-[#d5dfd9] rounded-lg p-6">
+            <h3 class="text-xl font-bold">Super Ball Fighting</h3>
+            <p class="mt-2 text-[#33443b]">A game built with C++ where the player controls a ball and fights a bot-controlled ball. Both sides ram into each other to deal damage, and the goal is to drain the bot's health first.</p>
+            <p class="mt-2 text-[#33443b]">Planned improvement: a better user interface design.</p>
+            <p class="mt-4 text-sm font-semibold text-[#376b55]">C++</p>
+        </article>
+
+        <article class="bg-white border border-[#d5dfd9] rounded-lg p-6">
+          <h3 class="text-xl font-bold">Portfolio Website</h3>
+          <p class="mt-2 text-[#33443b]">A personal portfolio website built from scratch to present my profile, skills, and projects.</p>
+          <p class="mt-4 text-sm font-semibold text-[#376b55]">HTML, Tailwind CSS</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="scroll-mt-20 py-14 border-t border-[#d5dfd9]">
+      <p class="text-[#376b55] font-semibold">Get in touch</p>
+      <h2 class="text-3xl font-bold mt-1 mb-5">Contact</h2>
+
+      <!-- dl = daftar "label : isi". dt = label, dd = isi -->
+      <dl class="grid grid-cols-[6rem_1fr] gap-y-3 text-lg max-w-2xl">
+        <dt class="font-semibold">Email</dt>
+        <dd>
+          <a href="mailto:diandra.alea2605@gmail.com"
+            class="text-[#376b55] underline underline-offset-4 break-all hover:text-[#2c5644]">diandra.alea2605@gmail.com</a>
+        </dd>
+
+        <dt class="font-semibold">Phone</dt>
+        <dd>082148653045</dd>
+
+        <dt class="font-semibold">GitHub</dt>
+        <dd>
+          <!-- Link ke profil GitHub, jadi tetap benar walau nama repo berubah -->
+          <a href="https://github.com/Diandra2605" target="_blank" rel="noopener noreferrer"
+            class="text-[#376b55] underline underline-offset-4 break-all hover:text-[#2c5644]">github.com/Diandra2605</a>
+        </dd>
+      </dl>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="border-t border-[#d5dfd9] bg-white">
+    <div class="max-w-5xl mx-auto px-6 py-6 text-sm text-[#3d4f46]">
+      &copy; 2026 Diandra Alea Eshan
+    </div>
+  </footer>
+
+</body>
+
+</html>
